@@ -29,7 +29,7 @@ def handle_start(message):
     markup.add(btn1, btn2, btn3)
 
     bot.send_message(message.chat.id,
-                     "Добро пожаловать, {0.first_name}!\n Я - <b>{1.first_name}</b>, бот созданный по-приколу, исключительно в учебно-развекательных целях.\nЯ могу предложить Вам уникальный набор стикеров, отправить забавную картиночку или даже подсказать погоду".format(
+                     "Добро пожаловать, {0.first_name}!\n Я - <b>{1.first_name}</b>, бот, созданный исключительно в учебно-развекательных целях.\nЯ могу предложить Вам уникальный набор стикеров, отправить забавную картиночку или даже подсказать погоду".format(
                          message.from_user, bot.get_me()),
                      parse_mode='html', reply_markup=markup)
 
@@ -87,7 +87,7 @@ def callback_inline(call):
             if call.data == 'stick':
                 bot.send_sticker(call.message.chat.id, 'CAACAgIAAxkBAAEBiQVfoojOYUDSwB9AE0QlQzpFPJZFgQACDQADgZpkHFkF6lQ08yteHgQ')
                 bot.send_message(call.message.chat.id,
-                                 "{0.first_name} хочет предложить тебе уникальный набор стикеров!\nДанный набор был нарисован начинающим дизайнером <b>Полиной Соловьёвой</b>!Перейдя по этой ссылке ты сможешь добавить их себе: https://t.me/addstickers/PolySunray".format(
+                                 "{0.first_name} хочет предложить тебе уникальный набор стикеров!\nДанный набор был нарисован начинающим дизайнером <b>Полиной Соловьёвой</b>! Перейдя по этой ссылке ты сможешь добавить их себе: https://t.me/addstickers/PolySunray".format(
                                      call.message.from_user)
                                  , parse_mode='html')
 
