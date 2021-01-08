@@ -1,6 +1,6 @@
 # sociablekoalabot
 Telegram бот для парсинга забавных картинок и просмотра погоды
-
+![alt text](screenshot.jpg)
 # Установка
 Установите Python пакеты из `requirements.txt:`
 ```
